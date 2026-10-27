@@ -75,7 +75,7 @@ export function Header() {
         <Link
           to="/"
           className="shrink-0"
-          aria-label={`${siteConfig.name} — ir para a página inicial`}
+          aria-label={`${siteConfig.name}: ir para a página inicial`}
         >
           <img
             src="/logo-polpa-santa-helena.png"

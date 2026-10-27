@@ -31,7 +31,7 @@ export interface CallToActionProps {
  */
 export function CallToAction({
   title = 'Pronto para fazer seu pedido?',
-  description = 'Mande sua lista pelo WhatsApp. A gente confirma os valores e combina a entrega — sem cadastro e sem aplicativo.',
+  description = 'Mande sua lista pelo WhatsApp. Confirmamos os valores e combinamos a entrega, sem cadastro e sem aplicativo.',
 }: CallToActionProps) {
   return (
     <section aria-labelledby="chamada-pedido" className="bg-plum">

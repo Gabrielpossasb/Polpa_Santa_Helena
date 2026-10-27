@@ -44,41 +44,41 @@ export const heroContent = {
   title: 'Polpa de fruta congelada, 100% fruta de verdade',
   /** Parágrafo de apoio. */
   subtitle:
-    'Sem conservantes, sem aditivos e sem açúcar adicionado. Cada quilo rende 10 pacotes de 100 g — o suficiente para sucos, vitaminas e drinks o mês inteiro.',
+    'Sem conservantes, sem aditivos e sem açúcar adicionado. Cada quilo rende 10 pacotes de 100 g, o suficiente para sucos, vitaminas e drinks o mês inteiro.',
 };
 
 /** Blocos de texto da página "História". */
 export const historyBlocks: ContentBlock[] = [
   {
-    id: 'comecou-na-roca',
-    title: 'Começou na roça',
+    id: 'origem',
+    title: 'A origem no cultivo',
     paragraphs: [
       'A Polpa Santa Helena nasceu do trabalho de Elcio da Silva Lemos Filho, fruticultor na região de Terenos, no Mato Grosso do Sul.',
-      'Primeiro ele plantava e colhia. Depois passou a transformar a própria colheita em polpa congelada — a fruta que saía do pé dele virava o que a gente vende até hoje.',
+      'Primeiro ele plantava e colhia. Com o tempo, passou a transformar a própria colheita em polpa congelada, dando início ao negócio que a família mantém até hoje.',
     ],
   },
   {
     id: 'a-marca',
     title: 'O nascimento da marca',
     paragraphs: [
-      'A polpa foi ganhando freguês, e logo a procura passou o que o pomar dava conta de produzir. Para não deixar ninguém sem, Elcio passou a trazer polpa da Pura Polpa para completar a produção.',
-      'O processamento e a embalagem continuaram sendo dele, sob a marca que havia criado: Polpa Santa Helena.',
+      'A procura cresceu acima do que o pomar era capaz de produzir. Para atender a todos os clientes, Elcio passou a trazer polpa da Pura Polpa como complemento à sua produção.',
+      'O processamento e a embalagem continuaram sob sua responsabilidade, com a marca que havia criado: Polpa Santa Helena.',
     ],
   },
   {
     id: 'a-virada',
-    title: 'Quando a produção parou',
+    title: 'A mudança de modelo',
     paragraphs: [
-      'Com o tempo, manter a produção própria deixou de fechar a conta. Em vez de encerrar, Elcio mudou o caminho: passou a revender os produtos da Pura Polpa, levando a mesma fruta de sempre para os mesmos clientes de sempre.',
-      'A marca continuou de pé. Mudou o como, não o compromisso.',
+      'Com os anos, manter a produção própria tornou-se inviável. Em vez de encerrar as atividades, Elcio optou por mudar o modelo e passou a atuar como revendedor da Pura Polpa, levando a mesma fruta de sempre aos mesmos clientes.',
+      'A marca permaneceu. Mudou o caminho, não o compromisso.',
     ],
   },
   {
     id: 'hoje',
-    title: 'O negócio hoje',
+    title: 'A continuidade',
     paragraphs: [
-      'Elcio faleceu em março de 2026. Desde então, quem cuida da Polpa Santa Helena somos nós: Gabriel Abraão Possas Borges e Helena Possas Borges, filhos que acompanham e ajudam no negócio desde pequenos.',
-      'Estamos modernizando o que dá para modernizar — o catálogo, o atendimento, este site. O que não muda é o jeito de tratar o cliente, que a gente aprendeu com ele. Os anos de trabalho do nosso pai são a base de tudo o que entregamos hoje.',
+      'Elcio faleceu em março de 2026. Desde então, a Polpa Santa Helena é conduzida por seus filhos, Gabriel Abraão Possas Borges e Helena Possas Borges, que acompanham e auxiliam no negócio desde a infância.',
+      'A proposta é modernizar o que for possível, do catálogo ao atendimento, preservando o modo de tratar o cliente que aprendemos com ele. Os anos de trabalho do nosso pai são a base de tudo o que entregamos hoje.',
     ],
   },
 ];

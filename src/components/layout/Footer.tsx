@@ -169,7 +169,7 @@ export function Footer() {
       <div className="border-t border-gold-soft/70">
         {/* `text-balance` evita que o CNPJ fique sozinho na segunda linha no celular. */}
         <p className="mx-auto max-w-6xl px-4 py-5 text-center font-sans text-xs text-balance text-ink/70 sm:px-6 lg:px-8">
-          <span className="nums-lining">{ano}</span> · {name} — {tagline} · {city}
+          <span className="nums-lining">{ano}</span> · {name} · {tagline} · {city}
           <br className="sm:hidden" />
           <span className="hidden sm:inline"> · </span>
           CNPJ <span className="nums-lining">{cnpj}</span>

@@ -68,7 +68,7 @@ export function WhatsAppButton({
       href={message === undefined ? buildWhatsAppLink() : buildWhatsAppLink(message)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`${label} — abre o WhatsApp ${siteConfig.whatsapp.display} em uma nova aba`}
+      aria-label={`${label}: abre o WhatsApp ${siteConfig.whatsapp.display} em uma nova aba`}
       className={[
         'inline-flex items-center justify-center rounded-full font-sans font-bold',
         'transition-colors duration-200',

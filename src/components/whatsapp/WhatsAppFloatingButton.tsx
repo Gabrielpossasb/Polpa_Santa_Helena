@@ -31,7 +31,7 @@ export function WhatsAppFloatingButton({ label = 'Fazer pedido' }: WhatsAppFloat
       href={buildWhatsAppLink()}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Fazer pedido pelo WhatsApp ${siteConfig.whatsapp.display} — abre em uma nova aba`}
+      aria-label={`Fazer pedido pelo WhatsApp ${siteConfig.whatsapp.display}, abre em uma nova aba`}
       className={[
         'fixed right-4 bottom-4 z-50 sm:right-6 sm:bottom-6',
         'inline-flex items-center gap-2.5 rounded-full',

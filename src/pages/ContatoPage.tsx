@@ -93,9 +93,9 @@ export default function ContatoPage() {
   return (
     <>
       <PageHero
-        eyebrow="Fale com a gente"
+        eyebrow="Fale conosco"
         title="Contato"
-        subtitle="O pedido é direto no WhatsApp — sem cadastro e sem aplicativo."
+        subtitle="O pedido é feito diretamente pelo WhatsApp, sem cadastro e sem aplicativo."
       />
 
       {/* Canais de atendimento */}
@@ -105,12 +105,12 @@ export default function ContatoPage() {
         </h2>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {/* WhatsApp — canal principal */}
+          {/* WhatsApp: canal principal */}
           <div className="flex flex-col rounded-2xl border border-gold-soft bg-white px-6 py-7 shadow-card">
             <WhatsAppIcon className="h-9 w-9 text-whatsapp" />
             <h3 className="mt-3 font-display text-lg font-bold text-plum">WhatsApp</h3>
             <p className="mt-1 font-sans text-sm text-ink">
-              Melhor jeito de falar com a gente e fazer o pedido.
+              A forma mais rápida de falar conosco e fazer o pedido.
             </p>
             <p className="mt-3 font-display text-xl font-bold whitespace-nowrap text-plum lg:text-2xl">
               <span className="nums-lining">{whatsapp.display}</span>

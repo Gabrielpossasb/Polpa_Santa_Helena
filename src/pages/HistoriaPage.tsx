@@ -26,7 +26,7 @@ export default function HistoriaPage() {
       <PageHero
         eyebrow="Quem faz"
         title="Nossa história"
-        subtitle="De um pomar em Terenos até a sua casa — um negócio de família."
+        subtitle="De um pomar em Terenos até a sua casa: um negócio de família."
       />
 
       {/* Texto corrido */}
