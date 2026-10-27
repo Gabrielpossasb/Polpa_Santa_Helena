@@ -447,9 +447,6 @@ produto e gera a logo, o favicon e a imagem de compartilhamento.
   pelas fotos reais de cada pacote. Quando elas chegarem, veja
   [Como adicionar um ícone](#como-adicionar-um-ícone) — o caminho automático
   resolve em uma linha de comando.
-- **Horário de atendimento.** Os horários em `siteConfig.hours` são um chute
-  (“Segunda a sexta: 8h às 18h / Sábado: 8h às 12h”). **Confirme e corrija**,
-  porque eles aparecem no rodapé e na página de Contato.
 - **Personalizar a História.** Os textos em `src/data/content.ts` são
   verdadeiros, mas genéricos de propósito: não inventei ano de fundação,
   nomes nem números. Contar a história real da loja é o que faz essa página

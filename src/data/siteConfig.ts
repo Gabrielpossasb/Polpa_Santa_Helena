@@ -120,8 +120,7 @@ export const siteConfig: SiteConfig = {
     methods: ['Pix', 'Cartão'],
   },
 
-  // TODO: confirmar o horário real de atendimento e ajustar as linhas abaixo.
-  hours: ['Segunda a sexta: 8h às 18h', 'Sábado: 8h às 12h'],
+  hours: ['Segunda a sexta: 8h às 18h', 'Sábado e domingo: 8h às 16h'],
 
   serviceCities: ['Campo Grande', 'Terenos'],
 
