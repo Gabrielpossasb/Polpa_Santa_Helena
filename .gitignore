@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vercel
+.DS_Store
+*.log
+npm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# capturas de tela geradas em testes de layout
+.playwright-mcp
+
+# permissões locais do Claude Code (são da máquina, não do projeto)
+.claude/settings.local.json

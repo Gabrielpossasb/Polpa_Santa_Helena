@@ -1,0 +1,146 @@
+/**
+ * Tema do site (Tailwind CSS v4).
+ *
+ * Todas as cores e fontes da marca ficam declaradas aqui, no bloco `@theme`.
+ * Os valores foram amostrados do catálogo em `IMAGES/PRODUTOS/`.
+ * Cada token vira automaticamente um utilitário do Tailwind
+ * (ex.: `--color-plum` => `text-plum`, `bg-plum`, `border-plum`).
+ *
+ * Nenhum componente deve usar cor em hexadecimal: use sempre estes tokens.
+ */
+
+@import 'tailwindcss';
+
+@theme {
+  /* ---- Cores da marca ------------------------------------------------- */
+
+  /* Fundo creme do catálogo impresso. */
+  --color-cream: #fcf4e9;
+  /* Creme um pouco mais quente, para faixas e áreas de destaque. */
+  --color-cream-deep: #f7ebd7;
+
+  /* Roxo escuro: títulos, rodapé e o grupo de preço R$ 35,00. */
+  --color-plum: #2d054e;
+  /* Roxo escuro suavizado, para textos secundários sobre creme. */
+  --color-plum-soft: #4b2a6b;
+
+  /* Verde do grupo de preço R$ 25,00. */
+  --color-grove: #4a7b02;
+  /* Laranja do grupo de preço R$ 29,00. */
+  --color-tangerine: #e57802;
+  /* Roxo médio usado como acento (potes de açaí e detalhes). */
+  --color-orchid: #8e4a9e;
+
+  /* Dourado das bordas e molduras finas. */
+  --color-gold: #d9a95a;
+  /* Dourado bem claro, para linhas de 1px que não devem pesar. */
+  --color-gold-soft: #e8d5ae;
+  /* Dourado escuro/cobre dos ornamentos e subtítulos. */
+  --color-gold-deep: #c8801e;
+
+  /* Cinza-arroxeado do texto corrido. */
+  --color-ink: #4a4055;
+
+  /* Verde oficial do WhatsApp, para os botões de pedido. */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1fb457;
+
+  /* ---- Tipografia ----------------------------------------------------- */
+
+  /* Títulos e nomes de sabores. */
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  /* Subtítulos e frases em itálico. */
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  /* Texto corrido e rótulos pequenos. */
+  --font-sans: 'Lato', system-ui, -apple-system, sans-serif;
+  /*
+   * Preços, volumes e pesos — a grotesca em negrito usada nos números do
+   * catálogo do Instagram. Fica propositalmente diferente das serifadas:
+   * número é informação que precisa ser lida rápido, não enfeite.
+   */
+  --font-numeric: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* ---- Sombras -------------------------------------------------------- */
+
+  /* Sombra suave e quente dos cards, para não "sujar" o creme. */
+  --shadow-card: 0 1px 2px rgb(45 5 78 / 0.04), 0 4px 14px -6px rgb(45 5 78 / 0.1);
+  --shadow-card-hover: 0 2px 4px rgb(45 5 78 / 0.06), 0 12px 28px -10px rgb(45 5 78 / 0.18);
+  /* Sombra do botão flutuante do WhatsApp. */
+  --shadow-float: 0 6px 20px -4px rgb(45 5 78 / 0.35);
+}
+
+/* -------------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------------- */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Evita qualquer chance de rolagem horizontal no celular. */
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /*
+   * O cabeçalho é fixo no topo, então rolar até uma âncora esconderia o
+   * título da seção atrás dele. Esta folga resolve para qualquer elemento
+   * que seja alvo de link ou de `scrollIntoView`.
+   */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  /* Foco sempre visível, em dourado escuro, para navegação por teclado. */
+  :focus-visible {
+    outline: 3px solid var(--color-gold-deep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Respeita quem prefere menos animação. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Utilitários próprios
+   ------------------------------------------------------------------------- */
+
+/**
+ * Números alinhados, para os algarismos escritos em Playfair ou Lato
+ * (telefone, CNPJ, ano) não saírem com alturas diferentes.
+ *
+ * Os preços não precisam disto: eles usam a Inter (`font-numeric`),
+ * que só tem algarismos alinhados.
+ */
+@utility nums-lining {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum' 1;
+}
+
+/**
+ * Textura de papel: pontinhos quase imperceptíveis que dão ao creme
+ * o aspecto impresso do catálogo original.
+ */
+@utility paper-grain {
+  background-image: radial-gradient(rgb(201 128 30 / 0.055) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
