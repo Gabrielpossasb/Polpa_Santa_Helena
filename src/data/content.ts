@@ -4,10 +4,12 @@
  * Separado de `siteConfig.ts` (que guarda dados de contato) para você poder
  * reescrever os textos sem esbarrar em número de telefone ou endereço.
  *
- * ATENÇÃO: os textos abaixo foram escritos de forma genérica e verdadeira
- * (revendedora Pura Polpa em Campo Grande/MS). Eles NÃO inventam ano de
- * fundação, nomes ou números. Personalize com a história real da loja —
- * é isso que faz a página valer a pena.
+ * A história em `historyBlocks` é a da família, contada pelo Gabriel.
+ *
+ * TODO: confirmar as datas. Hoje o único ano citado é o falecimento do
+ * Elcio (março de 2026). Quando houver certeza do ano em que o negócio
+ * começou e de quando a produção própria parou, vale incluir — data dá
+ * concretude à história.
  */
 
 /** Um bloco de texto com título, usado nas páginas internas. */
@@ -48,27 +50,35 @@ export const heroContent = {
 /** Blocos de texto da página "História". */
 export const historyBlocks: ContentBlock[] = [
   {
-    id: 'quem-somos',
-    title: 'Quem somos',
+    id: 'comecou-na-roca',
+    title: 'Começou na roça',
     paragraphs: [
-      'A Polpa Santa Helena é revendedora Pura Polpa em Campo Grande, no Mato Grosso do Sul. Levamos polpa de fruta congelada para a casa das pessoas, para lanchonetes, açaiterias e cozinhas que não abrem mão de fruta de verdade.',
-      'Trabalhamos com um catálogo enxuto e honesto: as frutas que realmente saem, no ponto certo de congelamento, com preço por quilo que cabe no orçamento de casa e no cálculo de quem revende.',
+      'A Polpa Santa Helena nasceu do trabalho de Elcio da Silva Lemos Filho, fruticultor na região de Terenos, no Mato Grosso do Sul.',
+      'Primeiro ele plantava e colhia. Depois passou a transformar a própria colheita em polpa congelada — a fruta que saía do pé dele virava o que a gente vende até hoje.',
     ],
   },
   {
-    id: 'o-que-fazemos',
-    title: 'O que entregamos',
+    id: 'a-marca',
+    title: 'O nascimento da marca',
     paragraphs: [
-      'Nossa polpa é 100% fruta. Não entra conservante, corante nem aditivo — o sabor é o da fruta madura, colhida e congelada rapidamente para segurar o frescor.',
-      'Cada quilo vem fracionado em 10 pacotes de 100 g. Você tira do congelador só o que vai usar, sem desperdício e sem precisar descongelar o pacote inteiro.',
+      'A polpa foi ganhando freguês, e logo a procura passou o que o pomar dava conta de produzir. Para não deixar ninguém sem, Elcio passou a trazer polpa da Pura Polpa para completar a produção.',
+      'O processamento e a embalagem continuaram sendo dele, sob a marca que havia criado: Polpa Santa Helena.',
     ],
   },
   {
-    id: 'como-atendemos',
-    title: 'Como atendemos',
+    id: 'a-virada',
+    title: 'Quando a produção parou',
     paragraphs: [
-      'O pedido é feito direto pelo WhatsApp, sem aplicativo e sem cadastro. Você manda a lista, a gente confirma o valor e combina a entrega.',
-      'Entregamos em Campo Grande e Terenos. Acima de 2 kg a entrega é gratuita; abaixo disso, há uma taxa de R$ 5,00. O pagamento pode ser no Pix ou no cartão.',
+      'Com o tempo, manter a produção própria deixou de fechar a conta. Em vez de encerrar, Elcio mudou o caminho: passou a revender os produtos da Pura Polpa, levando a mesma fruta de sempre para os mesmos clientes de sempre.',
+      'A marca continuou de pé. Mudou o como, não o compromisso.',
+    ],
+  },
+  {
+    id: 'hoje',
+    title: 'O negócio hoje',
+    paragraphs: [
+      'Elcio faleceu em março de 2026. Desde então, quem cuida da Polpa Santa Helena somos nós: Gabriel Abraão Possas Borges e Helena Possas Borges, filhos que acompanham e ajudam no negócio desde pequenos.',
+      'Estamos modernizando o que dá para modernizar — o catálogo, o atendimento, este site. O que não muda é o jeito de tratar o cliente, que a gente aprendeu com ele. Os anos de trabalho do nosso pai são a base de tudo o que entregamos hoje.',
     ],
   },
 ];

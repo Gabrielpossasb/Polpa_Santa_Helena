@@ -1,6 +1,8 @@
 /**
- * Página "História": quem é a Polpa Santa Helena, o que entrega
- * e como atende.
+ * Página "História": como a Polpa Santa Helena começou, com o Elcio
+ * plantando em Terenos, e como chegou às mãos dos filhos.
+ *
+ * O texto vem de `historyBlocks`, em `src/data/content.ts`.
  */
 
 import { historyBlocks, valueCards } from '../data/content';
@@ -24,7 +26,7 @@ export default function HistoriaPage() {
       <PageHero
         eyebrow="Quem faz"
         title="Nossa história"
-        subtitle="Fruta de verdade, congelada no ponto, direto para a sua casa."
+        subtitle="De um pomar em Terenos até a sua casa — um negócio de família."
       />
 
       {/* Texto corrido */}

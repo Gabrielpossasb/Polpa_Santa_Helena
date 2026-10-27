@@ -447,10 +447,10 @@ produto e gera a logo, o favicon e a imagem de compartilhamento.
   pelas fotos reais de cada pacote. Quando elas chegarem, veja
   [Como adicionar um ícone](#como-adicionar-um-ícone) — o caminho automático
   resolve em uma linha de comando.
-- **Personalizar a História.** Os textos em `src/data/content.ts` são
-  verdadeiros, mas genéricos de propósito: não inventei ano de fundação,
-  nomes nem números. Contar a história real da loja é o que faz essa página
-  valer a pena.
+- **Datas da História.** O texto de `historyBlocks` (em
+  `src/data/content.ts`) já é a história real da família, mas só cita um
+  ano: março de 2026. Quando houver certeza de quando o negócio começou e
+  de quando a produção própria parou, vale incluir.
 - **Fotos com marca d'água.** As fotos de *Acerola c/ Laranja* e *Limão* têm o
   selo "Pura Polpa" impresso. Se quiser sem o selo, é só substituir os
   arquivos em `public/icons/`. Na *Tangerina* o selo foi evitado com um
