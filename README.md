@@ -6,6 +6,9 @@ acontece pelo WhatsApp.
 
 **Revendedora Pura Polpa — Campo Grande/MS**
 
+No ar em **https://polpasantahelena.com.br** (hospedado na Vercel, publicado
+a cada `git push` na branch `main`).
+
 | Página | Endereço | O que tem |
 | --- | --- | --- |
 | Catálogo | `/` | Chamada da marca, diferenciais e o catálogo completo |
@@ -451,9 +454,6 @@ produto e gera a logo, o favicon e a imagem de compartilhamento.
   verdadeiros, mas genéricos de propósito: não inventei ano de fundação,
   nomes nem números. Contar a história real da loja é o que faz essa página
   valer a pena.
-- **Domínio próprio.** O endereço em `<link rel="canonical">` e nas metatags
-  do `index.html` aponta para `polpasantahelena.vercel.app`. Trocar quando
-  houver domínio definitivo.
 - **Fotos com marca d'água.** As fotos de *Acerola c/ Laranja* e *Limão* têm o
   selo "Pura Polpa" impresso. Se quiser sem o selo, é só substituir os
   arquivos em `public/icons/`. Na *Tangerina* o selo foi evitado com um
