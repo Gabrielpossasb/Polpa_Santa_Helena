@@ -10,10 +10,13 @@
  * Cor de acento de um card ou faixa.
  *
  * São as mesmas cores do catálogo impresso:
- * - `green`  — grupo de R$ 25,00/kg
- * - `orange` — grupo de R$ 29,00/kg
- * - `purple` — grupo de R$ 35,00/kg
- * - `orchid` — roxo médio, usado nos potes de açaí
+ * - `green`: grupo de R$ 30,00/kg
+ * - `orange`: grupo de R$ 35,00/kg
+ * - `purple`: grupo de R$ 40,00/kg
+ * - `orchid`: roxo médio, usado nos potes de açaí
+ *
+ * Os valores acima são só para situar quem lê. O preço de verdade mora
+ * em `priceTiers`, dentro de `src/data/catalog.ts`.
  */
 export type AccentColor = 'green' | 'orange' | 'purple' | 'orchid';
 
@@ -63,8 +66,8 @@ export type Flavor = Omit<CatalogItem, 'priceInCents'>;
  *
  * @example
  * const grupo: PriceTier = {
- *   id: 'tier-25',
- *   priceInCents: 2500,
+ *   id: 'tier-30',
+ *   priceInCents: 3000,
  *   accent: 'green',
  *   flavors: [{ id: 'caju', name: 'Caju' }],
  * };

@@ -18,7 +18,7 @@ No ar em **[polpasantahelena.com.br](https://polpasantahelena.com.br)**.
 
 ## O que é
 
-Três páginas — catálogo, história e contato — que substituem o encaminhamento
+Três páginas (catálogo, história e contato) que substituem o encaminhamento
 de fotos de tabela de preço por WhatsApp. Não tem carrinho, login nem banco de
 dados: cada produto leva direto para uma conversa no WhatsApp com a mensagem
 já preenchida.

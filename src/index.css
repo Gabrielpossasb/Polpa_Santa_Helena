@@ -19,14 +19,14 @@
   /* Creme um pouco mais quente, para faixas e áreas de destaque. */
   --color-cream-deep: #f7ebd7;
 
-  /* Roxo escuro: títulos, rodapé e o grupo de preço R$ 35,00. */
+  /* Roxo escuro: títulos, rodapé e o grupo de preço mais caro. */
   --color-plum: #2d054e;
   /* Roxo escuro suavizado, para textos secundários sobre creme. */
   --color-plum-soft: #4b2a6b;
 
-  /* Verde do grupo de preço R$ 25,00. */
+  /* Verde do grupo de preço mais barato. */
   --color-grove: #4a7b02;
-  /* Laranja do grupo de preço R$ 29,00. */
+  /* Laranja do grupo de preço intermediário. */
   --color-tangerine: #e57802;
   /* Roxo médio usado como acento (potes de açaí e detalhes). */
   --color-orchid: #8e4a9e;
