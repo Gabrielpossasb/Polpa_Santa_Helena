@@ -8,6 +8,12 @@ No ar em **[polpasantahelena.com.br](https://polpasantahelena.com.br)**.
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
 
+<p align="center">
+  <img src="docs/previw_page_home.png" width="32%" alt="Página inicial: chamada da marca e mosaico de frutas" />
+  <img src="docs/previw_page_contact.png" width="32%" alt="Página de contato: WhatsApp, Instagram e Facebook" />
+  <img src="docs/previw_page_footer.png" width="32%" alt="Rodapé: navegação, contato, entrega e pagamento" />
+</p>
+
 ---
 
 ## O que é
@@ -20,38 +26,6 @@ já preenchida.
 A escolha foi deliberada. O pedido já acontecia por WhatsApp e o volume não
 justifica checkout; adicionar backend traria custo recorrente e manutenção sem
 resolver nenhum problema real do negócio.
-
----
-
-## Decisões técnicas
-
-**Preço em centavos, nunca em float.** Todo valor no catálogo é `number`
-inteiro (`2500` = R$ 25,00), formatado só na renderização. Elimina erro de
-arredondamento de ponto flutuante em qualquer soma ou comparação.
-
-**Dados separados da apresentação.** Todo o catálogo vive em
-`src/data/catalog.ts`, tipado por `src/types/catalog.ts`. Os componentes não
-sabem o que é açaí — recebem props. Mudar um preço é editar uma linha, sem
-tocar em JSX.
-
-**Pipeline próprio de imagens** (`scripts/prepare-images.mjs`). Script em Node
-com `sharp` que recorta, remove fundo por *flood fill* a partir das bordas e
-exporta WebP. O flood fill preserva áreas internas da mesma cor — o branco do
-rótulo de um pote não é apagado junto com o fundo branco. Roda fora do build e
-os resultados ficam versionados, então `sharp` não é dependência do projeto.
-
-**Performance de carregamento.** Todas as imagens em WebP, `preconnect` para o
-Google Fonts e carregamento só dos pesos de fonte efetivamente usados.
-
-**SEO e compartilhamento.** `lang="pt-BR"`, canonical, meta description,
-Open Graph e Twitter Card completos. A `og:image` usa URL absoluta — WhatsApp e
-Facebook leem a página de fora e não resolvem caminho relativo.
-
-**SPA com rotas reais.** React Router 7 com rewrite na Vercel, para que
-`/contato` funcione em acesso direto e não só por navegação interna.
-
-**Organização por domínio.** Componentes agrupados em `catalog/`, `layout/`,
-`ui/`, `home/` e `whatsapp/`, com os utilitários puros isolados em `src/lib/`.
 
 ---
 
